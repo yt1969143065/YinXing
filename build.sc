@@ -134,7 +134,7 @@ trait CommonYinXing extends RVCOREModule with SbtModule { m =>
 
   override def millSourcePath = os.pwd
 
-  override def forkArgs = Seq("-Xmx64G", "-Xss256m")
+  override def forkArgs = Seq("-Xmx16G", "-Xss256m")
 
   override def ivyDeps = super.ivyDeps() ++ Seq(ivys.chiseltest)
 
